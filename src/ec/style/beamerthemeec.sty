@@ -1,0 +1,49 @@
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{backgrounds}
+
+% Settings
+\useinnertheme{ec}
+\useoutertheme{ec}
+\usecolortheme{ec}
+\usefonttheme{ec}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+% \setbeamersize{sidebar width left=0pt}
+% \setbeamersize{sidebar width right=0pt}
+
+\newcommand{\thankyou}[1]{
+\begin{frame}[t,plain]
+  \vspace*{-0.9\baselineskip}
+  \begin{columns}
+    \column{\paperwidth}
+    \begin{tikzpicture}
+      \fill[color=mainyellow] (0,\paperheight) rectangle (\paperwidth,.5\paperheight);
+      \fill[color=lightblue] (1,\paperheight) rectangle (1.05,.5\paperheight);
+      \node[lightblue] (thankyou) at (3,.6*\the\paperheight) {
+        \huge Thank you
+      };
+    \end{tikzpicture}
+  \end{columns}
+
+  \vfill
+
+  \includegraphics[width=1.35cm]{license}
+
+  \vfill
+
+  \begin{minipage}[b]{.95\textwidth}
+    \textcopyright European Union 2022\\
+    Unless otherwise noted the reuse of this presentation is authorised
+    under the CC BY 4.0 license. For any use or reproduction of elements
+    that are not owned by the EU, permission may need to be sought
+    directly from the respective right holders.
+  \end{minipage}
+\end{frame}
+}
+
+\mode<all>

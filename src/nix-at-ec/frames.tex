@@ -1,0 +1,38 @@
+
+\newcommand{\sepframe}[2]{
+  {
+    % These definition only applies to this frame.
+    \setbeamercolor{background canvas}{bg=ectext}
+
+    % Locally define a different logo only on this frame.
+    \logo{
+      \includegraphics[scale=.15]{src/ec/style/logo/logo-ce-horizontal-en-neg-quadri}
+    }
+
+    \begin{frame}[noframenumbering,plain]
+
+      \begin{tikzpicture}[remember picture,overlay]
+        \fill[ecaccentblue] (0,0) rectangle(.05,\paperheight);
+      \end{tikzpicture}
+
+      \begin{tikzpicture}[remember picture,overlay]
+        \ifx\insertframesubtitle\@empty%
+          {
+            \node[anchor=west,ecaccentblue,font=\huge] at (0,.25){\uppercase\expandafter{#1}};
+          }
+          \else
+          {
+            \node[anchor=west,ecaccentblue, font=\huge] at (0,.25){\uppercase\expandafter{#1}};
+            \node[anchor=west,white,font=\small] at (0,-.5){\uppercase\expandafter{#2}};
+          }
+        \fi
+      \end{tikzpicture}
+
+      \begin{tikzpicture}[remember picture, overlay]
+        \node[anchor=south east] at (current page.south east) {
+          \insertlogo
+        };
+      \end{tikzpicture}
+    \end{frame}
+  }
+}

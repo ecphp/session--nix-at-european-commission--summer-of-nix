@@ -1,0 +1,59 @@
+\documentclass{beamer}
+
+%\setbeameroption{show only notes} % Only notes
+\setbeameroption{show notes on second screen=right} % Both
+%\setbeamerfont{note page}{size=\tiny}
+%\setbeameroption{hide notes} % Only slides
+
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{kantlipsum}
+\usepackage{listings,xcolor}
+\usepackage{spverbatim}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{textcomp}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+\usepackage{caption}
+\usepackage{pgfpages}
+\usepackage{transparent}
+
+\definecolor{dkgreen}{rgb}{0,.5,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+\definecolor{ecbluebackground}{RGB}{29,34,65}
+\definecolor{ecblue}{RGB}{54,167,223}
+\definecolor{ecgrey}{RGB}{77,77,77}
+\definecolor{ecpink}{RGB}{237,6,120}
+\definecolor{IcebergSky}{RGB}{150,220,254}
+\definecolor{IcebergDeepBlue}{RGB}{0,131,195}
+\definecolor{mainyellow}{RGB}{255,209,41}
+\definecolor{lightblue}{RGB}{34,117,176}
+
+\input{version}
+\input{frames}
+
+\title{State of Nix}
+\subtitle{at European Commission}
+\institute{\href{mailto:DIGIT-PHP-SUPPORT@ec.europa.eu}{European Commission - Digit B4}}
+\date[2022]{October 2022}
+\author[Pol]{Pol Dellaiera}
+\logo{
+  \includegraphics[scale=.15]{logo-ce-horizontal-en}
+}
+\titlegraphic{
+  \includegraphics[trim=0 0 0 3mm,scale=0.25]{logo-ce-en}
+}
+
+\usetheme{ec}
+
+\newenvironment{itquote}
+{\begin{quote}\itshape}
+    {\end{quote}\ignorespacesafterend}
+
+\setbeamersize{text margin left=5mm,text margin right=5mm}

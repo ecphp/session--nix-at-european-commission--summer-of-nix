@@ -1,0 +1,70 @@
+@startmindmap
+
+header
+Summer of Nix
+endheader
+
+center footer Open source at European Commission
+
+<style>
+mindmapDiagram {
+  .ec {
+    BackgroundColor #004494
+    FontColor #ffffff
+    FontStyle bold
+  }
+  .date {
+    BackgroundColor #OrangeRed
+  }
+  .infra {
+    BackgroundColor #Orange
+  }
+  .tools {
+    BackgroundColor #Gold
+  }
+  .produce {
+    BackgroundColor #SpringGreen
+  }
+  .contribute {
+    BackgroundColor #Aqua
+  }
+  .transform {
+    BackgroundColor #DeepSkyBlue
+  }
+}
+</style>
+
+*:Open source
+in the
+European Commission <<ec>>;
+** 2000 <<date>>
+***:Use
+infrastructure <<infra>>;
+** 2003 <<date>>
+***:Use
+infrastructure <<infra>>;
+****:Use
+tools <<tools>>;
+** 2007 <<date>>
+***:Use
+infrastructure <<infra>>;
+****:Use
+tools <<tools>>;
+***** Produce <<produce>>
+** 2014 <<date>>
+***:Use
+infrastructure <<infra>>;
+****:Use
+tools <<tools>>;
+***** Produce <<produce>>
+****** Contribute <<contribute>>
+** 2022 <<date>>
+***:Use
+infrastructure <<infra>>;
+****:Use
+tools <<tools>>;
+***** Produce <<produce>>
+****** Contribute <<contribute>>
+******* Transform <<transform>>
+
+@endmindmap

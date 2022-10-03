@@ -1,0 +1,34 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{kantlipsum}
+
+\title{This is a {\LaTeX} beamer theme}
+\subtitle{This is a subtitle}
+\date[2021]{January 2021}
+\author[Pol]{Pol Dellaiera \texttt{pol.dellaiera@ext.ec.europa.eu}}
+
+\input{frames}
+
+\usetheme{ec}
+
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Simple frame title}
+    \framesubtitle{Simple frame \textit{reductio ad absurdum}}
+    \kant{}
+\end{frame}
+
+\begin{sepframe}{Title}{Subtitle}
+\end{sepframe}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Simple frame title}
+    \framesubtitle{Simple frame \textit{reductio ad absurdum}}
+    \kant{}
+\end{frame}
+
+\end{document}

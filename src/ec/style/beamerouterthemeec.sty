@@ -1,0 +1,26 @@
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{ec}[1][]
+{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1cm]{frametitle}
+    \begin{tikzpicture}[align=left,node distance=15mm,every node/.style={inner sep=0,outer sep=0}]
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,2);
+        \fill[ecaccentyellow] (1.05,0) rectangle (1,2);
+        \ifx\insertframesubtitle\@empty
+            \node[anchor=north west,ecmain,font=\large] (title) at (1.1,0.75){\insertframetitle};
+            \else
+            \node[anchor=north west,ecmain,font=\large] (title) at (1.1,0.85){\insertframetitle\\\color{ecaccentyellow}{\insertframesubtitle}};
+        \fi
+    \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+% The right sidebar contains the logo by default, we empty it to disable
+% rendering the logo in it.
+% See default template in https://ctan.uib.no/macros/latex/contrib/beamer/base/themes/outer/beamerouterthemedefault.sty
+\defbeamertemplate*{sidebar right}{ec}[1][]
+{
+}
+
+\mode<all>

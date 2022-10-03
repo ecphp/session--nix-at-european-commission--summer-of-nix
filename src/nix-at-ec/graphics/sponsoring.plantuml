@@ -1,0 +1,42 @@
+@startmindmap
+
+header
+Summer of Nix
+endheader
+
+center footer Open source at European Commission
+
+<style>
+mindmapDiagram {
+  .ec {
+    BackgroundColor #004494
+    FontColor #ffffff
+    FontStyle bold
+  }
+  .intermediary {
+    BackgroundColor #E95420
+  }
+  .project {
+    BackgroundColor #Skyblue
+  }
+  :depth(2) {
+      BackGroundColor #Skyblue
+  }
+}
+</style>
+
+*:European Commission
+DG CNECT / NGI<<ec>>;
+**:Intermediaries
+- NLNet
+- NixOS Foundation<<intermediary>>;
+*** Tvix
+*** DreamNix
+*** Mobile-NixOS
+*** Software vulnerability discovery
+*** Securing NixOS services with SystemD
+*** UEFI Support Boot for NixOS
+*** RobotNix
+*** Trustix
+
+@endmindmap

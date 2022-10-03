@@ -1,0 +1,11 @@
+/.direnv/
+/build/
+/bin/
+/.vscode/
+/out/
+*.bak*
+indent.log
+/node_modules/
+package-lock.json
+/src/nix-at-ec/resources/*.png
+/src/nix-at-ec/resources/*.svg

@@ -1,0 +1,52 @@
+@startmindmap
+
+header
+Summer of Nix
+endheader
+
+center footer Open source at European Commission
+
+<style>
+mindmapDiagram {
+  .ec {
+    BackgroundColor #004494
+    FontColor #ffffff
+    FontStyle bold
+  }
+  .type {
+    BackgroundColor #DarkGray
+  }
+  .windows {
+    BackgroundColor #Skyblue
+  }
+  .linux {
+    BackgroundColor #E95420
+  }
+  .aws {
+    BackgroundColor #ff9900
+  }
+  .mac {
+    BackgroundColor #ff605c
+  }
+  .supported {
+    BackgroundColor #Olive
+  }
+  .unsupported {
+    BackgroundColor #OrangeRed
+  }
+}
+</style>
+
+* European Commission<<ec>>
+**:Supported
+environments<<supported>>;
+*** Microsoft Windows 10<<windows>>
+*** Linux (apt based)<<linux>>
+*** Amazon workspace (yum based)<<aws>>
+**:Unsupported
+environments<<unsupported>>;
+*** Microsoft Windows<<windows>>
+*** Linux<<linux>>
+*** Mac OS X<<mac>>
+
+@endmindmap
