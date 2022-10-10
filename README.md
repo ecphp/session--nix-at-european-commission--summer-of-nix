@@ -9,9 +9,9 @@ ecosystem forward together.
 
 ## About
 
-This presentation is about Nix **and** the European Commission, but also Nix
-**at** European Commission. We will see together what the E.C. is doing for the
-Nix ecosystem but also how Nix is used internally.
+This presentation is about Nix **and** the European Commission, and
+about Nix **at** the European Commission. Or: what is the EC doing for
+the Nix ecosystem and how is it using Nix?
 
 ## Contribute
 
