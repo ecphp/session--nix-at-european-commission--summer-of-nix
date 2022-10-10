@@ -18,13 +18,13 @@
 % Title page - The first page of the presentation
 \defbeamertemplate*{title page}{ec}[1][]
 {
-    \begin{beamercolorbox}[wd=\paperwidth,ht=1cm]{titlepage}
+    \begin{beamercolorbox}[wd=\paperwidth]{titlepage}
         \begin{tikzpicture}[remember picture, overlay]
             \coordinate (SW) at (current page.south west);
             \coordinate (SE) at (current page.south east);
             \coordinate (NW) at (current page.north west);
             \coordinate (NE) at (current page.north east);
-            \fill[color=ecmainlight,anchor=south west] (SW) rectangle (13,2.34);
+            \fill[color=ecmainlight,anchor=south west] (SW) rectangle (13,2.4);
             \fill[color=ecaccentyellow] (1,-6) rectangle (1.05, 1);
             \node[ecaccentyellow,anchor=north west,font=\LARGE] (title) at (1,1) {
                 \inserttitle
