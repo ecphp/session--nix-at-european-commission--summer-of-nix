@@ -6,15 +6,15 @@
   \titlepage
 
   \note<1>{
-    Hi my name is Pol Dellaiera and I started working for European
+    Hi, my name is Pol Dellaiera and I started working for the European
     Commission 10 years ago, as an external consultant.
   }
   \note<2>{
-    Today I'm going to talk about the state of Nix at European Commission.
+    Today I'm going to talk about the state of Nix at the European Commission.
   }
   \note<3>{
-    Before deep diving into the main subject, I'm going to talk about the
-    relation that European Commission has with open source.
+    Before diving into the main subject, let me talk about the deepening
+    relation between the European Commission and open source in general.
   }
 \end{frame}
 
@@ -41,35 +41,35 @@
   \end{center}
 
   \note<1>{
-    One of the take-aways of this talk would be that the Commission really
+    One of the take-aways of this talk would be that the Commission 
     recognises the practical value of open source.
   }
   \note<2>{
-    Making a talk about Nix already demonstrate how we like this freedom
-    to innovate, and how we like sharing these innovations with colleagues
-    and with others, such as you The NixOS community.
+    Making a talk about Nix already demonstrates how we like this freedom
+    to innovate. And how we like sharing these innovations with colleagues
+    and with others, such as you - the NixOS community.
   }
   \note<3>{
     But did you know that this is not something new???
   }
   \note<4>{
-    Open source and the Commission goes back more than twenty years ago.
+    Open source and the Commission go back more than twenty years ago.
   }
   \note<5>{
     And over these 20 years, the Commission has grown to appreciate open
     source. To experiment new tools and innovate just like with Nix,
     but also because:
     \begin{itemize}
-      \item lower costs,
       \item flexibility,
       \item scalability,
       \item vendor-independence
+      \item oftentimes lower costs,
       \item and the list goes on\dots
     \end{itemize}
   }
   \note<6>{
-    At EC, Digit is the central IT service for the whole Commission, it could be
-    compared to the ministry of IT. This is also where I work\dots and I can
+    At EC, DIGIT is the central IT service provider for the Commission. You could 
+    compare it to 'a ministry of IT'. This is where I work\dots and I can
     tell you that we use open source every where.
 
     \begin{itemize}
@@ -82,11 +82,11 @@
   }
   \note<7>{
     \begin{itemize}
-      \item In 2000, a colleague from JRC created the first building blocks of
-            what eventually became Apache, one of the most popular web server.
-      \item In 2007, the EUPL license has been created,
-      \item And in 2011, the ESTAT project has for the first time open sourced
-        some of its projects, this has been a threshold in the organisation.
+      \item Around 1999, a colleague from JRC created the first building blocks of
+            what eventually became Apache, one of the most-popular web servers;
+      \item In 2007, the Commission published the EUPL license;
+      \item And around 2011, Eurostat began sharing some of its tools as open source
+        some of its projects;
       \item Since 2019, the ECPHP team - the team I work in - has released a
         dozen of open source projects and materials used within European
         Commission but also in other organisations. We are not the only team
@@ -133,8 +133,8 @@
       \begin{itemize}[<+->]
         \item Open source strategy
         \item The strategy impacts the entire organisation
-        \item First public milestone in September 2022
-        \item The idea: OSS to be the norm
+        \item First (public) milestone in September 2022
+        \item The idea: a working culture based on the principles of open source
       \end{itemize}
 
     \end{column}%
@@ -145,7 +145,7 @@
     2020.
   }
   \note<2>{
-    The strategy led to the creation of a dedicated horizontal team - the
+    The strategy led to the creation of a dedicated team - the
     Commission Open Source Programme Office.
   }
   \note<3>{
@@ -189,14 +189,12 @@
   \end{center}
 
   \note<1>{
-    European Commission has multiple DGs and \textpm800 open source projects are funded
-    through DG CNECT and NGI.
+    About \textpm800 open source projects are funded through DG Connect and NGI. (Aside: Connect is like one of the ministries at the EC);
 
-    Examples like wireguard, TODO add more examples here.
+    Examples include Wireguard, TOR, F-Droid, OpenPGP, and Matrix, Cryptpad, Replicant, LIBRE SOC and RISC V SOC.
   }
   \note<2>{
-    Then, European Commission has partnerships with NLnet and the NixOS
-    Foundation.
+    European Commission (Connect) has partnerships with NLnet and the NixOS Foundation.
   }
   \note<3>{
     It is through those partners / intermediaries that 8 projects related to Nix
@@ -219,10 +217,10 @@
     \end{itemize}
   }
   \note<5>{
-    Let's now see how Nix is used concretely at European Commission by
-    explaining the context and the reasons why it is used.
+    Now, let's see how the European Commission is using Nix itself. 
+    I will begin give some context, and the reasons why it is used.
 
-    Let's start with an overview of the environments we have\dots
+    And that means you giving you an overview of our environments\dots
   }
 \end{frame}
 
@@ -241,8 +239,8 @@
     In order to reduce the amount of bugs and unforeseen circumstances, we want
     to unify the developer environments.
 
-    The will of the management is also to reduce the environment diversity and
-    to ensure that developers uses a development environment which closely match
+    Management also wants to reduce the diversity of environments, and
+    ensure that we use a development environment which closely match
     what's in production.
 
     This is quite a challenge since there are a few different operating systems
