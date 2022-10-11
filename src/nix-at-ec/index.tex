@@ -34,8 +34,8 @@
       \node[inner sep=0] (image) at (current page.center) {\includegraphics[width=\textwidth,keepaspectratio]{opensource-in-ec}};
       \only<9>{
         \fill [white, opacity=0.9]
-          (image.south east) rectangle (image.north west)
-          (2.9,-3) rectangle (6.3,-1.75);
+        (image.south east) rectangle (image.north west)
+        (2.9,-3) rectangle (6.3,-1.75);
       }
     \end{tikzpicture}
   \end{center}
@@ -76,7 +76,7 @@
       \item 75\% of our servers runs on Linux,
       \item The PHP language is used for mostly all Commission websites,
       \item NodeJS is used by eUI, a frontend web framework used by all
-            internal EC web applications,
+            internal web applications,
       \item Software developers uses more and more open source tools.
     \end{itemize}
   }
@@ -86,11 +86,11 @@
             what eventually became Apache, one of the most-popular web servers;
       \item In 2007, the Commission published the EUPL license;
       \item And around 2011, Eurostat began sharing some of its tools as open source
-        some of its projects;
+            some of its projects;
       \item Since 2019, the ECPHP team - the team I work in - has released a
-        dozen of open source projects and materials used within European
-        Commission but also in other organisations. We are not the only team
-        doing that, there are other teams doing the same!
+            dozen of open source projects and materials used within European
+            Commission but also in other organisations. We are not the only team
+            doing that, there are other teams doing the same!
     \end{itemize}
   }
   \note<8>{
@@ -145,8 +145,8 @@
     2020.
   }
   \note<2>{
-    The strategy led to the creation of a dedicated team - the
-    Commission Open Source Programme Office.
+    Impacting the whole organisation, the strategy led to the creation of a
+    dedicated team - the Commission Open Source Programme Office.
   }
   \note<3>{
     On the 16th September in Brno (Czech Republic) we officially unveiled
@@ -154,7 +154,7 @@
     software publicly.
   }
   \note<4>{
-    I guess you got the point, we want open source to be everywhere at EC,
+    I guess you got big picture, we want open source to be everywhere at EC,
     and not only at Digit.
   }
   \note<5>{
@@ -162,7 +162,7 @@
     a strict requirement.
   }
   \note<6>{
-    But let's check how European Commission is sponsoring Nix projects...
+    But let's check how European Commission is sponsoring Nix projects\dots
   }
 \end{frame}
 
@@ -177,13 +177,13 @@
       \node[inner sep=0] (image) at (current page.center) {\includegraphics[width=.8\textwidth,keepaspectratio]{sponsoring}};
       \only<1>{
         \fill [white, opacity=0.9]
-          (image.south east) rectangle (image.north west)
-          (-5.1,-3) rectangle (-2.29,1);
+        (image.south east) rectangle (image.north west)
+        (-5.1,-3) rectangle (-2.29,1);
       }
       \only<2>{
         \fill [white, opacity=0.95]
-          (image.south east) rectangle (image.north west)
-          (-5.1,-3) rectangle (0.30,1);
+        (image.south east) rectangle (image.north west)
+        (-5.1,-3) rectangle (0.30,1);
       }
     \end{tikzpicture}
   \end{center}
@@ -191,10 +191,21 @@
   \note<1>{
     About \textpm800 open source projects are funded through DG Connect and NGI. (Aside: Connect is like one of the ministries at the EC);
 
-    Examples include Wireguard, TOR, F-Droid, OpenPGP, and Matrix, Cryptpad, Replicant, LIBRE SOC and RISC V SOC.
+    Examples:
+    \begin{itemize}
+      \item Wireguard
+      \item TOR
+      \item F-Droid
+      \item OpenPGP
+      \item Matrix
+      \item Cryptpad
+      \item Replicant
+      \item Libre and RISC V SOC
+    \end{itemize}
   }
   \note<2>{
-    European Commission (Connect) has partnerships with NLnet and the NixOS Foundation.
+    European Commission (Connect) has partnerships with NLnet and the NixOS
+    Foundation.
   }
   \note<3>{
     It is through those partners / intermediaries that 8 projects related to Nix
