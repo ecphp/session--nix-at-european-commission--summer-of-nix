@@ -68,8 +68,8 @@
     \end{itemize}
   }
   \note<6>{
-    At EC, DIGIT is the central IT service provider for the Commission. You could
-    compare it to 'a ministry of IT'. This is where I work\dots and I can
+    At EC, DIGIT is the central IT service provider for the Commission. You
+    could compare it to 'a ministry of IT'. This is where I work\dots and I can
     tell you that we use open source every where.
 
     \begin{itemize}
@@ -82,11 +82,12 @@
   }
   \note<7>{
     \begin{itemize}
-      \item Around 1999, a colleague from JRC created the first building blocks of
-            what eventually became Apache, one of the most-popular web servers;
+      \item Around 1999, a colleague from JRC created the first building blocks
+            of what eventually became Apache, one of the most-popular web
+            servers;
       \item In 2007, the Commission published the EUPL license;
-      \item And around 2011, Eurostat began sharing some of its tools as open source
-            some of its projects;
+      \item And around 2011, Eurostat began sharing some of its tools as open
+            source some of its projects;
       \item Since 2019, the ECPHP team - the team I work in - has released a
             dozen of open source projects and materials used within European
             Commission but also in other organisations. We are not the only team
@@ -141,12 +142,15 @@
   \end{columns}
 
   \note<1>{
-    That is reflected in the open source strategy officially published in
-    2020.
+    That is reflected in the open source strategy, officially published in
+    2020 which is encouraging the use and reuse of software solutions, knowledge
+    and expertise to deliver better European services using open source.
+
+    It also indicates a commitment to support open source developer communities.
   }
   \note<2>{
     Impacting the whole organisation, the strategy led to the creation of a
-    dedicated team - the Commission Open Source Programme Office.
+    dedicated team - the Commission Open Source Programme Office - the OSPO.
   }
   \note<3>{
     On the 16th September in Brno (Czech Republic) we officially unveiled
@@ -155,7 +159,7 @@
   }
   \note<4>{
     I guess you got big picture, we want open source to be everywhere at EC,
-    and not only at Digit.
+    and not only at DIGIT.
   }
   \note<5>{
     A good example is the cloud framework project 'Simpl', where open source is
@@ -189,7 +193,8 @@
   \end{center}
 
   \note<1>{
-    About \textpm800 open source projects are funded through DG Connect and NGI. (Aside: Connect is like one of the ministries at the EC);
+    About \textpm800 open source projects are funded through DG Connect and NGI.
+    (Aside: Connect is like one of the ministries at the EC);
 
     Examples:
     \begin{itemize}
@@ -285,26 +290,27 @@
     mind the list of open source projects I like the most. First one being
     Blender the 3d suite, this is thanks to that software I ended up using Linux
     so many years ago. Second one is git for its awesomeness and the third
-    one is now Nix without discussion.
+    one is now Nix without hesitation.
 
     I love this project and its community so much that I've been angry with
     myself to not have discover it earlier. How it is possible ?! What was I
     doing all these years?
 
-    Anyway, here's how I introduced Nix to my colleagues\dots
+    Anyway, enough whining! Here's how I introduced Nix to my colleagues\dots
   }
   \note<5>{
-    In the development competency center at Digit, the team I work in, I help
+    In the development competency center at DIGIT, the team I work in, I help
     teams and developers of all horizons to be successful in their development,
     promoting the use of best practices, doing live code review,
     proof-of-concept, and abstracting common parts in open source projects.
 
     One day, a team having issues aligning their development environments.
+
     They were all using the same Linux flavor, but some of them were not up to
     date, some of them did a major upgrade, some of them were using the bleeding
     edge packages, some others were not able to upgrade for some obscure reasons
-    and finally some of them had multiple versions of the PHP interpreter and
-    were unable to compile the required extensions to run their project.
+    and finally some of them had multiple versions of a software and were unable
+    to compile the specific extensions to run their project.
 
     I guess you see the big picture. It would have been extremely time consuming
     to align everyone\dots and time is money.
@@ -386,10 +392,11 @@
 
   \note<1>{
     By shipping a custom Nix flake per project, developers are able to
-    customize their development environment at will. A simple example is
-    this \LaTeX\ presentation which is hosted on a git repository with a flake
-    file containing the required dependencies to build and contribute to it
-    without worries.
+    customize their development environment at will.
+
+    A simple example is this open source \LaTeX\ presentation which is hosted on
+    code.europa.eu with a flake file containing the required dependencies to
+    build and contribute to it without worries.
   }
   \note<2>{
     I use direnv and it's brother nix-direnv to load software dependencies
@@ -398,20 +405,22 @@
     with Nix.
   }
   \note<3>{
-    I also created a trivial home manager profile setting up a custom shell
+    I also created a trivial home-manager profile setting up a custom shell
     with some carefully chosen plugins, custom aliases and nix-direnv
-    integration. Thanks to that, it reduces the amount of time a developer needs
-    to spend setting up it's workstation, because this profile set everything up
-    with one single command and a few seconds.
+    integration.
+
+    Thanks to that, it reduces the amount of time a developer needs to spend
+    setting up it's workstation, because this profile set everything up with one
+    single command and a few seconds.
   }
   \note<4>{
     Very recently, in the OpenSource Project Office team we wanted to host
     our own instance of a note service, and we ended up setting up a bunch
     of servers. One reverse proxy, one HedgeDoc instance and some others.
-    All managed by a single flake file and guess what \dots, we deploy on
+    All managed by a single flake file and guess what\dots, we deploy on
     Fridays without any worries!
 
-    While setting up our infrastructure in code, we contributed to NixOS by
+    While setting up our ``Infrastructure as Code'', we contributed to NixOS by
     creating pull requests to fix minor issues we had.
   }
   \note<5>{
@@ -435,8 +444,10 @@
 
     <make a pause>\dots
 
-    And Mr Einstein was right, and he still is today, more than a hundred years
-    later despite the efforts that are made to try to break relativity.
+    This is something we should always have in mind.
+
+    And Mr Einstein was right, and more than a hundred years later, he still
+    is right\dots despite the efforts that are made to try to break Relativity.
   }
 
   \note<2>{
@@ -485,16 +496,14 @@
 
     But this might not be true since last week with the new tutorial that has
     been published on nix.dev (https://nix.dev/tutorials/nix-language).
-
-    IMHO, I believe that such quality tutorial should be in the official
-    documentation.
   }
   \note<4>{
     About documentation, there are still a lot of work to be done.
 
     This is the reason why there is a new documentation team in place in the
-    community, they are in charge of "flattening the curve". That tutorial is
-    their first outcome and many more are coming.
+    community, they are in charge of "flattening the curve". That new Nix
+    tutorial is actually their first outcome and many more are coming, I can't
+    wait to see that.
   }
 \end{frame}
 
@@ -516,10 +525,10 @@
     The idea is obviously to continue experimenting with Nix, testing things and
     see how it could be adopted more broadly.
 
-    I believe that the issues related to the fear of unknown will disapear with
+    I believe that the issues related to the fear of unknown will disappear with
     time.
 
-    The flake feature is going to loose it's experimental flag, this is going to
+    The flake feature is about to loose it's experimental flag, this is going to
     encourage more and more people to join in.
 
     The programming language? This is like any other language, as long as we
@@ -527,18 +536,23 @@
   }
   \note<2>{
     In my team, the development profile will be improved and its documentation
-    as well.
+    as well. This idea would be to tell about this profile to other teams and
+    show how it can be used in conjunction of what's already existing.
   }
   \note<3>{
     I wish I could ship a flake file per project to reduce to almost zero the
-    amount of time new developers need to spend setting up their environment.
-    This is already the case for the open source projects in my team, but it
-    would be a big plus if it could be done by default on other projects.
+    amount of time new developers need to spend to setup their environment.
+    This is already the case for all the open source projects in my team, but it
+    would be a big plus if it could be done on other projects by default.
   }
   \note<4>{
-    I told you earlier we already contributed back to NixOS with a couple of
-    pull requests. The idea is to continue to work with this mindset of openness
-    and sharing.
+    About contributing, we already contributed back to NixOS with a couple of
+    pull requests. The idea is to continue to work with this mindset of
+    openness, re-usability and sharing.
+  }
+  \note<5>{
+    This last and positive slide conclude my presentation, feel free to ask your
+    questions\dots
   }
 \end{frame}
 
