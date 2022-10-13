@@ -1,4 +1,4 @@
-# Nix at European Commission - Summer of Nix
+# State of Nix at European Commission - Summer of Nix 2022
 
 [Summer of Nix][summer of nix website] is a paid summer program where you can
 learn, meet, and work with the Nix community. It targets experienced Nixers and
@@ -12,6 +12,10 @@ ecosystem forward together.
 This presentation is about Nix **and** the European Commission, and
 about Nix **at** the European Commission. Or: what is the EC doing for
 the Nix ecosystem and how is it using Nix?
+
+## Download
+
+Find the latest version [on Github](https://github.com/ecphp/session--nix-at-european-commission--summer-of-nix/releases).
 
 ## Contribute
 

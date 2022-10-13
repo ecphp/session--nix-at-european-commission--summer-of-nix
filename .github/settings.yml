@@ -34,9 +34,9 @@ repository:
     allow_rebase_merge: false
     allow_squash_merge: false
     default_branch: main
-    description: "Session 'State of Nix at European Commission' for the Summer of Nix 2022"
-    topics: session
-    homepage: https://github.com/ecphp/session--nix-at-european-commission--summer-of-nix/releases/latest
+    description: "Mirror repository - Session 'State of Nix at European Commission' for the Summer of Nix 2022"
+    topics: session,nix
+    homepage: https://code.europa.eu/ecphp/sessions-nix-at-european-commission-summer-of-nix
     has_downloads: true
     has_issues: true
     has_pages: false
