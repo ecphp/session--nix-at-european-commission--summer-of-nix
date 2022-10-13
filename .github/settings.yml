@@ -36,7 +36,7 @@ repository:
     default_branch: main
     description: "Mirror repository - Session 'State of Nix at European Commission' for the Summer of Nix 2022"
     topics: session,nix
-    homepage: https://code.europa.eu/ecphp/sessions-nix-at-european-commission-summer-of-nix
+    homepage: https://code.europa.eu/ecphp/session-nix-at-european-commission-summer-of-nix
     has_downloads: true
     has_issues: true
     has_pages: false
