@@ -4,22 +4,23 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    theme-ec.url = "git+https://code.europa.eu/pol/european-commission-latex-beamer-theme/";
   };
 
-  outputs = { self, nixpkgs, flake-utils, ... }@inputs:
+  outputs = { self, nixpkgs, flake-utils, theme-ec, ... }@inputs:
     with flake-utils.lib; eachSystem allSystems (system:
       let
         version = self.shortRev or self.lastModifiedDate;
 
         pkgs = import nixpkgs {
           inherit system;
-          config = {
-            allowUnfreePredicate = (pkg: true);
-          };
         };
 
         tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-full latex-bin latexmk;
+          theme-ec = {
+              pkgs = [ theme-ec.packages."${system}".theme-ec ];
+          };
         };
 
         documentProperties = {
@@ -28,8 +29,8 @@
             tex
             pkgs.coreutils
             pkgs.gnumake
-            pkgs.openjdk
-            pkgs.plantuml
+            # pkgs.openjdk
+            # pkgs.plantuml
             # pkgs.pandoc
             # pkgs.plantuml
             # pkgs.nixpkgs-fmt
