@@ -12,14 +12,19 @@
       let
         version = self.shortRev or self.lastModifiedDate;
 
+        overlays = [
+          theme-ec.overlays.default
+        ];
+
         pkgs = import nixpkgs {
-          inherit system;
+          inherit system overlays;
         };
 
         tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-full latex-bin latexmk;
-          theme-ec = {
-              pkgs = [ theme-ec.packages."${system}".theme-ec ];
+
+          latex-theme-ec = {
+              pkgs = [ pkgs.latex-theme-ec ];
           };
         };
 
