@@ -12,12 +12,12 @@
       let
         version = self.shortRev or self.lastModifiedDate;
 
-        overlays = [
-          theme-ec.overlays.default
-        ];
-
         pkgs = import nixpkgs {
-          inherit system overlays;
+          inherit system;
+
+          overlays = [
+            theme-ec.overlays.default
+          ];
         };
 
         tex = pkgs.texlive.combine {
