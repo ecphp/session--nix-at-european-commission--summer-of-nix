@@ -15,7 +15,7 @@ jobs:
 
       - name: Create global variables
         id: version
-        run: echo "::set-output name=version::$(git rev-parse --short HEAD)"
+        run: echo "{version}={$(git rev-parse --short HEAD)}" >> $GITHUB_OUTPUT
 
   build:
     name: Build PDF files
@@ -30,10 +30,6 @@ jobs:
 
       - name: Check out source files
         uses: actions/checkout@v3
-
-      - name: Create global variables
-        id: version
-        run: echo "{version}={$(git rev-parse --short HEAD)}" >> $GITHUB_OUTPUT
 
       - name: Install Nix
         uses: cachix/install-nix-action@v17
