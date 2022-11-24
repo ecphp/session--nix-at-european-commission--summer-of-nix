@@ -15,7 +15,7 @@ jobs:
 
       - name: Create global variables
         id: version
-        run: echo "{version}={$(git rev-parse --short HEAD)}" >> $GITHUB_OUTPUT
+        run: echo "version=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
   build:
     name: Build PDF files
