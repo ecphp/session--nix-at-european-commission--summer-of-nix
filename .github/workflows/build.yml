@@ -33,7 +33,7 @@ jobs:
 
       - name: Create global variables
         id: version
-        run: echo "::set-output name=version::$(git rev-parse --short HEAD)"
+        run: echo "{version}={$(git rev-parse --short HEAD)}" >> $GITHUB_OUTPUT
 
       - name: Install Nix
         uses: cachix/install-nix-action@v17
