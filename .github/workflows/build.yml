@@ -40,7 +40,7 @@ jobs:
 
       - name: Build document
         run: |
-          nix build . --quiet -o summer-of-nix.pdf
+          nix build . --impure --quiet -o summer-of-nix.pdf
 
       - name: Upload build assets
         uses: actions/upload-artifact@v3
