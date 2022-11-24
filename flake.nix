@@ -19,14 +19,14 @@
 
           overlays = [
             theme-ec.overlays.default
-          ] ++ nixpkgs.lib.optional (ci-detector.lib.inCI == false) ec-fonts.overlays.default;
+          ] ++ nixpkgs.lib.optional (ci-detector.lib.notInCI) ec-fonts.overlays.default;
         };
 
         tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-full latex-bin latexmk;
 
           latex-theme-ec = {
-              pkgs = [ pkgs.latex-theme-ec ] ++ nixpkgs.lib.optional (ci-detector.lib.inCI == false) pkgs.ec-square-sans;
+              pkgs = [ pkgs.latex-theme-ec ] ++ nixpkgs.lib.optional (ci-detector.lib.notInCI) pkgs.ec-square-sans;
           };
         };
 

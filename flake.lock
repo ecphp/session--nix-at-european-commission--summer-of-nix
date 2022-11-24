@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1669309747,
-        "narHash": "sha256-SFho/PBdxo1e9ZZIRyr9NT6oxgzMbBOqrG2+w5mmtrg=",
+        "lastModified": 1669313122,
+        "narHash": "sha256-TX0qVxVeZiQArpWUQMacM95Ma8JkTos0UDd7MTHDg0w=",
         "owner": "loophp",
         "repo": "ci-detector",
-        "rev": "032c6633232bca9699bb7914da61683a23d09abf",
+        "rev": "98f37435507c22f77e7c1293e5762a7896ae1a83",
         "type": "github"
       },
       "original": {
