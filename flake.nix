@@ -5,9 +5,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     theme-ec.url = "git+https://code.europa.eu/pol/european-commission-latex-beamer-theme/";
+    ec-fonts.url = "git+https://code.europa.eu/pol/ec-fonts/";
+    ci-detector.url = "github:loophp/ci-detector";
   };
 
-  outputs = { self, nixpkgs, flake-utils, theme-ec, ... }@inputs:
+  outputs = { self, nixpkgs, flake-utils, theme-ec, ec-fonts, ci-detector, ... }@inputs:
     with flake-utils.lib; eachSystem allSystems (system:
       let
         version = self.shortRev or self.lastModifiedDate;
@@ -17,14 +19,14 @@
 
           overlays = [
             theme-ec.overlays.default
-          ];
+          ] ++ nixpkgs.lib.optional (ci-detector.lib.inCI == false) ec-fonts.overlays.default;
         };
 
         tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-full latex-bin latexmk;
 
           latex-theme-ec = {
-              pkgs = [ pkgs.latex-theme-ec ];
+              pkgs = [ pkgs.latex-theme-ec ] ++ nixpkgs.lib.optional (ci-detector.lib.inCI == false) pkgs.ec-square-sans;
           };
         };
 
