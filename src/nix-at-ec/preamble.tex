@@ -13,8 +13,9 @@
 
 \defaultfontfeatures{Scale=MatchLowercase}
 \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\IfFileExists{ECSquareSansPro-Regular.ttf}{\setmainfont[]{EC Square Sans Pro Regular}}{\let\upmu\mu}
-\setmainfont[]{EC Square Sans Pro Regular}
+\IfFileExists{ECSquareSansPro-Regular.ttf}{
+  \setmainfont[]{EC Square Sans Pro Regular}
+}{\let\upmu\mu}
 \usetheme{ec}
 \usefonttheme{serif} % use mainfont rather than sansfont for slide text
 
