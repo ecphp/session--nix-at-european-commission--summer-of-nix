@@ -19,37 +19,36 @@
 
           overlays = [
             theme-ec.overlays.default
-          ] ++ nixpkgs.lib.optional (ci-detector.lib.notInCI) ec-fonts.overlays.default;
-        };
-
-        tex = pkgs.texlive.combine {
-          inherit (pkgs.texlive) scheme-full latex-bin latexmk;
-
-          latex-theme-ec = {
-              pkgs = [ pkgs.latex-theme-ec ] ++ nixpkgs.lib.optional (ci-detector.lib.notInCI) pkgs.ec-square-sans;
-          };
-        };
-
-        documentProperties = {
-          name = "nix-at-ec-presentation";
-          inputs = [
-            tex
-            pkgs.coreutils
-            pkgs.gnumake
-            # pkgs.openjdk
-            # pkgs.plantuml
-            # pkgs.pandoc
-            # pkgs.plantuml
-            # pkgs.nixpkgs-fmt
-            # pkgs.nixfmt
-            # pkgs.pympress
+            ec-fonts.overlays.default
           ];
         };
 
-        documentDrv = pkgs.stdenvNoCC.mkDerivation {
-          name = documentProperties.name + "-" + version;
+        tex = pkgs.texlive.combine {
+            inherit (pkgs.texlive) scheme-full latex-bin latexmk;
+
+            latex-theme-ec = {
+                pkgs = [ pkgs.latex-theme-ec pkgs.ec-square-sans ];
+            };
+        };
+
+        tex-for-ci = pkgs.texlive.combine {
+            inherit (pkgs.texlive) scheme-full latex-bin latexmk;
+
+            latex-theme-ec = {
+                pkgs = [ pkgs.latex-theme-ec ];
+            };
+        };
+
+        documentDerivation = pkgs.stdenvNoCC.mkDerivation {
+          name = "nix-at-ec--summer-of-nix-2022";
+
           src = self;
-          buildInputs = documentProperties.inputs;
+
+          buildInputs = [
+            pkgs.coreutils
+            pkgs.gnumake
+          ];
+
           configurePhase = ''
             runHook preConfigure
             substituteInPlace "src/nix-at-ec/version.tex" \
@@ -63,14 +62,21 @@
           '';
         };
       in
-      rec {
+      {
         # Nix shell / nix build
-        packages.default = documentDrv;
+        packages.default = if ci-detector.lib.inCI then
+            (documentDerivation.overrideAttrs (oldAttrs: {
+                buildInputs = [ oldAttrs.buildInputs ] ++ [ tex-for-ci ];
+            }))
+        else
+            (documentDerivation.overrideAttrs (oldAttrs: {
+                buildInputs = [ oldAttrs.buildInputs ] ++ [ tex ];
+            }));
 
         # Nix develop
         devShells.default = pkgs.mkShellNoCC {
-          name = documentProperties.name;
-          buildInputs = documentProperties.inputs;
+          name = "latex-devshell";
+          buildInputs = documentDerivation.buildInputs;
         };
       });
 }
