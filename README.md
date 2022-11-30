@@ -19,6 +19,13 @@ Find the latest version [on Github](https://github.com/ecphp/session--nix-at-eur
 
 ## Contribute
 
+To build the document:
+
+```shell
+nix build
+open result/nix-at-ec.pdf
+```
+
 To load a development shell containing all the tools needed to build the
 presentation locally:
 

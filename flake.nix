@@ -27,7 +27,7 @@
             inherit (pkgs.texlive) scheme-full latex-bin latexmk;
 
             latex-theme-ec = {
-                pkgs = [ pkgs.latex-theme-ec pkgs.ec-square-sans ];
+                pkgs = [ pkgs.latex-theme-ec pkgs.ec-square-sans-lualatex ];
             };
         };
 
@@ -45,6 +45,7 @@
           src = self;
 
           buildInputs = [
+            tex
             pkgs.coreutils
             pkgs.gnumake
           ];
@@ -57,7 +58,9 @@
           '';
           installPhase = ''
             runHook preInstall
-            cp build/nix-at-ec.pdf $out
+
+            install -m644 -D build/*.pdf --target $out/
+
             runHook postInstall
           '';
         };
