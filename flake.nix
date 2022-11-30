@@ -45,7 +45,6 @@
           src = self;
 
           buildInputs = [
-            tex
             pkgs.coreutils
             pkgs.gnumake
           ];
@@ -79,7 +78,7 @@
         # Nix develop
         devShells.default = pkgs.mkShellNoCC {
           name = "latex-devshell";
-          buildInputs = documentDerivation.buildInputs;
+          buildInputs = documentDerivation.buildInputs ++ [ tex ];
         };
       });
 }
