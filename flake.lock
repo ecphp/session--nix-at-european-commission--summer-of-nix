@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1669616789,
-        "narHash": "sha256-kOen4KfQc71wW7n/rWXi5v2mpOdUoo+9CHexGCr8wsk=",
+        "lastModified": 1670806719,
+        "narHash": "sha256-/xSm08ROs0mGEAkOOBddxckX+Tu/Qrkqzg4/QdnbZ0Y=",
         "owner": "loophp",
         "repo": "ci-detector",
-        "rev": "69ff9906b8c88257bd2078733827dc1ddb390e06",
+        "rev": "03f86afb4d98cd38f1f3cab9a4392360a4b84e16",
         "type": "github"
       },
       "original": {
@@ -23,11 +23,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1669616789,
-        "narHash": "sha256-kOen4KfQc71wW7n/rWXi5v2mpOdUoo+9CHexGCr8wsk=",
+        "lastModified": 1670806719,
+        "narHash": "sha256-/xSm08ROs0mGEAkOOBddxckX+Tu/Qrkqzg4/QdnbZ0Y=",
         "owner": "loophp",
         "repo": "ci-detector",
-        "rev": "69ff9906b8c88257bd2078733827dc1ddb390e06",
+        "rev": "03f86afb4d98cd38f1f3cab9a4392360a4b84e16",
         "type": "github"
       },
       "original": {
@@ -42,11 +42,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1669654642,
-        "narHash": "sha256-are9ZFRq6/61+OcSlEfkFCuaLoyUOQ2RlGrqAR8HikM=",
+        "lastModified": 1669903195,
+        "narHash": "sha256-K7rPQcFZnfH1ZzrjHgjHHhkUqJ9T0vwA+cX/kScZQBE=",
         "ref": "refs/heads/main",
-        "rev": "8399ada3b98a3eadd778a5cfc8743530aa5951ba",
-        "revCount": 12,
+        "rev": "e33dbf1fea32406a66fa97ecb3a0db77fda74991",
+        "revCount": 13,
         "type": "git",
         "url": "https://code.europa.eu/pol/ec-fonts/"
       },
@@ -61,11 +61,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1669654642,
-        "narHash": "sha256-are9ZFRq6/61+OcSlEfkFCuaLoyUOQ2RlGrqAR8HikM=",
+        "lastModified": 1669903195,
+        "narHash": "sha256-K7rPQcFZnfH1ZzrjHgjHHhkUqJ9T0vwA+cX/kScZQBE=",
         "ref": "refs/heads/main",
-        "rev": "8399ada3b98a3eadd778a5cfc8743530aa5951ba",
-        "revCount": 12,
+        "rev": "e33dbf1fea32406a66fa97ecb3a0db77fda74991",
+        "revCount": 13,
         "type": "git",
         "url": "https://code.europa.eu/pol/ec-fonts/"
       },
@@ -151,11 +151,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1669535121,
-        "narHash": "sha256-koZLM7oWVGrjyHnYDo7/w5qlmUn9UZUKSFNfmIjueE8=",
+        "lastModified": 1670771160,
+        "narHash": "sha256-ze4w84B+RbNqm0laRBgXIOZlnOI/5wlCKJWe1LXqSBA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "b45ec953794bb07922f0468152ad1ebaf8a084b3",
+        "rev": "0e857e0089d78dee29818dc92722a72f1dea506f",
         "type": "github"
       },
       "original": {
@@ -183,11 +183,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1669750745,
-        "narHash": "sha256-C9ZNizmMiuML40Imt79rCoiMt1O4aM6TCg/ME1Uu/Q8=",
+        "lastModified": 1670827406,
+        "narHash": "sha256-nLNk7uiLbhbvb4TVz67XK7+Ezr1zcWYDWmNrWGmEUqA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "19a6b85e8f8daca80e38418e96247cc499e2640e",
+        "rev": "ffca9ffaaafb38c8979068cee98b2644bd3f14cb",
         "type": "github"
       },
       "original": {
@@ -199,11 +199,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1669535121,
-        "narHash": "sha256-koZLM7oWVGrjyHnYDo7/w5qlmUn9UZUKSFNfmIjueE8=",
+        "lastModified": 1670771160,
+        "narHash": "sha256-ze4w84B+RbNqm0laRBgXIOZlnOI/5wlCKJWe1LXqSBA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "b45ec953794bb07922f0468152ad1ebaf8a084b3",
+        "rev": "0e857e0089d78dee29818dc92722a72f1dea506f",
         "type": "github"
       },
       "original": {
@@ -231,11 +231,11 @@
     },
     "nixpkgs_6": {
       "locked": {
-        "lastModified": 1669597967,
-        "narHash": "sha256-R+2NaDkXsYkOpFOhmVR8jBZ77Pq55Z6ilaqwFLLn000=",
+        "lastModified": 1670827406,
+        "narHash": "sha256-nLNk7uiLbhbvb4TVz67XK7+Ezr1zcWYDWmNrWGmEUqA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "be9e3762e719211368d186f547f847737baad720",
+        "rev": "ffca9ffaaafb38c8979068cee98b2644bd3f14cb",
         "type": "github"
       },
       "original": {
@@ -263,11 +263,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1669655867,
-        "narHash": "sha256-tEy41fem07FmU9OfK2w1xMRX3JprUpDb1xC4YTBSuFU=",
+        "lastModified": 1670850342,
+        "narHash": "sha256-HZssoxBnGjap0VBvZLiXW9qvE8SAx8jH/S0WM331obQ=",
         "ref": "refs/heads/master",
-        "rev": "abc457237ea969a317f1ec55ab0a6cf784cb50f6",
-        "revCount": 88,
+        "rev": "fa743301f92d5608761c5430d8237145f0c62324",
+        "revCount": 99,
         "type": "git",
         "url": "https://code.europa.eu/pol/european-commission-latex-beamer-theme/"
       },
